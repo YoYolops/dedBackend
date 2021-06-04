@@ -1,0 +1,148 @@
+[
+    {
+        "name": "Anão da Colina",
+        "bonus": {
+            "constituicao": 2,
+            "sabedoria": 1
+        },
+        "expertise": {
+            "weapons": ["axe", "hammer"]
+        }
+        
+    },
+    {
+        "name": "Anão da Montanha",
+        "bonus": {
+            "constituicao": 2,
+            "forca": 2
+        },
+        "expertise": {
+            "weapons": ["axe", "hammer"],
+            "armor": ["light", "medium"]
+        }
+    },
+    {
+        "name": "Alto Elfo",
+        "bonus": {
+            "destreza": 2,
+            "inteligencia": 1
+        },
+        "expertise": {
+            "weapons": ["longSword", "shortSword", "longBow", "shortBow"]
+        }
+    },
+    {
+        "name": "Elfo da Floresta",
+        "bonus": {
+            "destreza": 2,
+            "sabedoria": 1
+        },
+        "expertise": {
+            "weapons": ["longSword", "shortSword", "longBow", "shortBow"]
+        }
+    },
+    {
+        "name": "Elfo Negro",
+        "bonus": {
+            "destreza": 2,
+            "carisma": 1
+        },
+        "expertise": {
+            "weapons": ["shortSword", "shortBow", "crossBow"]
+        }
+    },
+    {
+        "name": "Meio-Elfo",
+        "bonus": {
+            "destreza": 2,
+            "carisma": 2
+        },
+        "expertise": {
+            "weapons": ["axe", "hammer", "longSword"],
+            "armor": ["medium", "heavy"]
+        }
+    },
+    {
+        "name": "Halfling Pés Leves",
+        "bonus": {
+            "destreza": 2,
+            "carisma": 1
+        },
+        "expertise": {
+            "weapons": ["dagger"]
+        }
+    },
+    {
+        "name": "Halfling Robusto",
+        "bonus": {
+            "destreza": 2,
+            "constituicao": 1
+        },
+        "expertise": {
+            "weapons": ["dagger"],
+            "armor": ["light"]
+        }
+    },
+    {
+        "name": "Humano",
+        "bonus": {},
+        "expertise": {}
+    },
+    {
+        "name": "Draconato",
+        "bonus": {
+            "forca": 2,
+            "carisma": 1
+        },
+        "expertise": {
+            "weapon": ["longSword", "shortSword", "mediumSword"]
+        }
+    },
+    {
+        "name": "Gnomo da Floresta",
+        "bonus": {
+            "inteligencia": 2,
+            "destreza": 1
+        },
+        "expertise": {
+            "weapon": ["dagger"]
+        }
+    },
+    {
+        "name": "Gnomo das Rochas",
+        "bonus": {
+            "inteligencia": 2,
+            "constituicao": 1
+        },
+        "expertise": {
+            "weapon": ["dagger"]
+        }
+    },
+    {
+        "name": "Meio Orc",
+        "bonus": {
+            "forca": 2,
+            "constituicao": 1
+        },
+        "expertise": {
+            "weapons": ["axe", "hammer", "longSword", "mace"],
+            "armor": ["heavy"]
+        }
+    },
+    {
+        "name": "Tiefling Infernal",
+        "bonus": {
+            "carisma": 2,
+            "inteligencia": 1
+        },
+        "weapons": ["shortSword", "shortBow", "crossBow"]
+    },
+    {
+        "name": "Tiefling Abissal",
+        "bonus": {
+            "inteligencia": 2,
+            "constituicao": 1
+        },
+        "weapons": ["shortSword", "shortBow", "crossBow"]
+    }
+]
