@@ -50,3 +50,15 @@ export interface Monster { /* interface incompleta, exitem keys que ainda não f
     wisdom: string,
     legendary_action?: Array<Action>
 }
+
+export interface Item {
+    id: number,
+    name: string,
+    rarity: string,
+    imageUrl: string,
+    description: string,
+    atk: string,
+    def: string,
+    wight: string,
+    type: string,
+}

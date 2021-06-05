@@ -7,7 +7,7 @@ class MonsterManager {
         const { name, challengeRating, type  } = req.query
 
         function veryfier(monster: Monster) {
-            if ((monster.name === name || !name) && (monster.challenge_rating === challengeRating || !challengeRating) && (monster.type === type || !type)) {
+            if ((monster.challenge_rating === challengeRating || !challengeRating) && (monster.type === type || !type)) {
                 return true
             } return false
         }

@@ -9,7 +9,7 @@ class SpellManager {
 
         function veryfier(value: Spell)
         {
-            if ((value.name === name || !name) && (value.level === level || !level) && (value.type === type || !type) && (value.range === range || !range)) {
+            if ((value.level === level || !level) && (value.type === type || !type) && (value.range === range || !range)) {
                 return true
             }
             return false

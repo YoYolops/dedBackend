@@ -8,7 +8,7 @@ import routes from './routes'
 
 const dndDataProvider = express()
 
-mongoose.connect(
+mongoose.connect( /* operação assíncrona */
     `mongodb+srv://yoyo:${process.env.MONGO_PASSWORD}@dnddata.bq2ao.mongodb.net/${process.env.MONGO_NAME}?retryWrites=true&w=majority`,
     {
         useNewUrlParser: true,
