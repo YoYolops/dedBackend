@@ -1,6 +1,6 @@
-const monsters = require('../../data/monsters.json');
+const monsters = require('../../../data/monsters.json');
 import { Request, Response } from 'express';
-import { Monster } from '../types';
+import { Monster } from '../../types';
 
 class MonsterManager {
     searchMonster(req: Request, res: Response) {

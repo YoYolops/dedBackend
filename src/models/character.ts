@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 /* modificadores, perícias, capacidade de carregar peso */
 
-const PlayerDataSchema = new mongoose.Schema({
+const CharacterSchema = new mongoose.Schema({
     characterName: String,
     password: String,
     characterData: {
@@ -24,4 +24,4 @@ const PlayerDataSchema = new mongoose.Schema({
     }
 })
 
-export default mongoose.model('PlayerDataSchema')
+export default mongoose.model('Character', CharacterSchema)

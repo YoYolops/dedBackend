@@ -1,6 +1,6 @@
-const spells = require('../../data/spell.json');
+const spells = require('../../../data/spell.json');
 import { Request, Response } from 'express';
-import { Spell } from '../types'
+import { Spell } from '../../types'
 
 class SpellManager {
 

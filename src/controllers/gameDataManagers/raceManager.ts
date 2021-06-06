@@ -1,4 +1,4 @@
-const races = require('../../data/races.json');
+const races = require('../../../data/races.json');
 import { Request, Response } from 'express';
 
 class RaceManager {

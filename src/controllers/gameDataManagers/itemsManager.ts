@@ -1,6 +1,6 @@
-const items = require('../../data/items.json');
+const items = require('../../../data/items.json');
 import { Request, Response } from 'express';
-import { Item } from '../types';
+import { Item } from '../../types';
 
 class ItemManager {
     searchItem(req: Request, res: Response) {
