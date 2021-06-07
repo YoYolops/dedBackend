@@ -1,4 +1,4 @@
-const spells = require('../../../data/spell.json');
+const spells = require('../../data/spell.json');
 const races = require('../../data/races.json');
 const monsters = require('../../data/monsters.json');
 const items = require('../../data/items.json');
