@@ -1,50 +1,37 @@
 import { Request, Response } from 'express';
 import Character from '../models/character';
 
-class AuthManager {
-    async isCharacterNameRegistered(characterName: string) { 
-        /* verifica se o nome de personagem já é registrado, retorna true em caso afirmativo e false em caso negativo */
+export async function isCharacterNameRegistered(characterName: string) { 
+    /* verifica se o nome de personagem já é registrado, retorna true em caso afirmativo e false em caso negativo */
+    const characterAlreadyRegistered = await Character.findOne({characterName})
+    return !!characterAlreadyRegistered 
+}
 
-        const characterAlreadyRegistered = await Character.findOne({characterName})
-        return !!characterAlreadyRegistered 
-    }
+export async function registerNewCharacter(req: Request, res: Response) {
+    const character = req.body
 
-    async registerNewCharacter(req: Request, res: Response) {
-        const character = req.body
-
-        if(this.isCharacterNameRegistered(character.characterName)) {
-            return res.json({
-                status: 'Erro Benigno',
-                message: 'Já existe um personagem com esse nome',
-                error: null
-            })
-        } else {
-            try {
-                await Character.create({
-                    characterName: character.characterName,
-                    password: character.password,
-                    characterData: character.characterData,
-                    pessessions: character.possessions
-                })
-            } catch(e) {
-                return res.json({
-                    status: 'Erro Maligno',
-                    message: 'Houve um erro na conexão com o banco de dados',
-                    error: e
-                })
-            }
-        }
-    }
-
-    async validateCharacterLogin(req: Request, res: Response) {
-        const { characterName, password } = req.body
-
-        const characterRegistered = await Character.findOne({
-            $and: [{ characterName: characterName }, { password: password }]
+    if(await isCharacterNameRegistered(character.characterName)) {
+        return res.json({
+            status: 'Erro Benigno',
+            message: 'Já existe um personagem com esse nome',
+            error: null
         })
-
-        return res.json(characterRegistered)
+    } else {
+        const createdCharacter = await Character.create({
+            characterName: character.characterName,
+            password: character.password,
+            characterData: character.characterData,
+            pessessions: character.possessions
+        })
+        return res.json(createdCharacter)
     }
 }
 
-export default new AuthManager
+export async function validateCharacterLogin(req: Request, res: Response) {
+    const { characterName, password } = req.body
+
+    const characterRegistered = await Character.findOne({
+        $and: [{ characterName: characterName }, { password: password }]
+    })
+    return res.json(characterRegistered)
+}

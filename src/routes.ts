@@ -1,17 +1,14 @@
 const { Router } = require('express')
-import RaceManager from './controllers/gameDataManagers/raceManager';
-import SpellManager from './controllers/gameDataManagers/spellManager';
-import MonsterManager from './controllers/gameDataManagers/monsterManager';
-import ItemsManager from './controllers/gameDataManagers/itemsManager';
-import AuthManager from './controllers/authManager'
+import { searchRace, searchSpell, searchMonster, searchItem } from './controllers/dataManager';
+import { registerNewCharacter } from './controllers/authManager'
 
 const routes = Router();
 
-routes.get('/races', RaceManager.searchRace);
-routes.get('/spells', SpellManager.searchSpell);
-routes.get('/monsters', MonsterManager.searchMonster);
-routes.get('/items', ItemsManager.searchItem);
+routes.get('/races', searchRace);
+routes.get('/spells', searchSpell);
+routes.get('/monsters', searchMonster);
+routes.get('/items', searchItem);
 
-routes.post('/register', AuthManager.registerNewCharacter)
+routes.post('/register', registerNewCharacter);
 
 export default routes;

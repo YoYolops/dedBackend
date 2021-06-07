@@ -1,8 +1,15 @@
-const obj = {
-    oi: "hello",
-    xau: "bye"
+class Dollynho {
+    dale() {
+        return true
+    }
+
+    dolly() {
+        if(this.dale()) {
+            console.log('dolly')
+        }
+    }
 }
 
-let amizade;
+const teste = new Dollynho
 
-console.log(!amizade)
+teste.dolly()
