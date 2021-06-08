@@ -62,3 +62,21 @@ export interface Item {
     wight: string,
     type: string,
 }
+
+export interface Race {
+    name: string,
+    bonus: {
+        constituicao?: number,
+        sabedoria?: number,
+        forca?: number,
+        destreza?: number,
+        inteligencia?: number,
+        carisma?: string
+    },
+    expertise: {
+        weapons?: Array<string>,
+        armor?: Array<string>
+    },
+    displacement: number,
+    description: string
+}

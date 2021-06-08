@@ -7,8 +7,9 @@
         },
         "expertise": {
             "weapons": ["axe", "hammer"]
-        }
-        
+        },
+        "displacement": 7.5,
+        "description": "Como um anão da colina, você tem sentidos aguçados, maior intuição e notável resiliência. Os anões dourados de Faerûn, que vivem em seu poderoso reino ao sul do continente, são anões da colina, assim como os exilados Neidar e os depreciáveis Klar de Krynn, no cenário de Dragonlance."
     },
     {
         "name": "Anão da Montanha",
@@ -19,7 +20,9 @@
         "expertise": {
             "weapons": ["axe", "hammer"],
             "armor": ["light", "medium"]
-        }
+        },
+        "displacement": 7,
+        "description": "Como um anão da montanha, você é forte e resistente, acostumados a uma vida difícil em terrenos difíceis. Você, provavelmente tem a descendência daqueles mais altos (para um anão) e tende a possuir uma coloração mais clara. Os anões do escudo do norte de Faerûn, bem como o clã governante Hylar e os clãs nobres Daewar de Dragonlance, são anões da montanha."
     },
     {
         "name": "Alto Elfo",
@@ -29,7 +32,9 @@
         },
         "expertise": {
             "weapons": ["longSword", "shortSword", "longBow", "shortBow"]
-        }
+        },
+        "displacement": 9,
+        "description": "Como alto elfo, você possui uma mente afiada e um domínio da magia básico. Em muitos dos mundos de D&D, existem dois tipos de altos elfos. Um tipo (que inclui os elfos cinzentos e elfos do vale de Greyhawk, os Silvanesti de Dragonlance, e os elfos do sol dos Reinos Esquecidos) são arrogantes e reclusos, acreditando serem superiores aos não elfos e até mesmo a outros elfos. O outro tipo (como os altos elfos de Greyhawk, os Qualinesti de Dragonlance e os elfos da lua dos Reinos Esquecidos) são mais comuns e amigáveis, e muitas vezes encontrados entre humanos e outras raças."
     },
     {
         "name": "Elfo da Floresta",
@@ -39,7 +44,9 @@
         },
         "expertise": {
             "weapons": ["longSword", "shortSword", "longBow", "shortBow"]
-        }
+        },
+        "displacement": 11,
+        "description": "Como um elfo da floresta, você possui sentidos e intuição aguçados, seus pés ágeis guiam-no rápida e furtivamente através de suas florestas nativas. Essa categoria inclui os elfos selvagens (grugach) de Greyhawk e os Kagonesti de Dragonlance, bem como as raças chamadas de elfos da floresta em Greyhawk e nos Reinos Esquecidos. Em Faerûn, os elfos da floresta (também chamados de elfos selvagens, elfos verdes ou elfos do bosque) são reclusos e desconfiados dos não elfos."
     },
     {
         "name": "Elfo Negro",
@@ -49,7 +56,9 @@
         },
         "expertise": {
             "weapons": ["shortSword", "shortBow", "crossBow"]
-        }
+        },
+        "displacement": 9,
+        "description": "Descendentes de uma antiga sub-raça de elfos de pele negra, os drow foram banidos da superfície do mundo por seguirem a deusa Lolth pelo caminho do mal e corrupção. Agora, eles construíram sua própria civilização nas profundezas do Subterrâneo, moldados pelo Caminho de Lolth. Também conhecidos como elfos negros, os drow possuem pele negra similar a obsidiana polida e cabelos brancos opacos ou amarelo pálido. Normalmente eles possuem olhos muito pálidos (tão pálidos que são confundidos com olhos brancos) com tons de lilás, prata, rosa, vermelho e azul. Eles costumam ser menores e mais magros que a maioria dos elfos."
     },
     {
         "name": "Meio-Elfo",
@@ -60,7 +69,9 @@
         "expertise": {
             "weapons": ["axe", "hammer", "longSword"],
             "armor": ["medium", "heavy"]
-        }
+        },
+        "displacement": 9,
+        "description": "Vagando entre dois mundos mas, na verdade, não pertencendo a nenhum dos dois, meio-elfos combinam o que alguns dizem ser as melhores qualidades dos seus parentes elfos e humanos: a curiosidade, inventividade e ambição humanas temperadas pelos sensos refinados, amor a natureza e gostos artísticos dos elfos. Alguns meio-elfos vivem entre os humanos, separados por suas diferenças emocionais e físicas, vendo seus amigos e amores envelhecer enquanto o tempo malmente os toca. Outros vivem entre os elfos, crescendo impacientes à medida que atingem a maturidade nos reinos élficos intermináveis, enquanto seus amigos continuam a viver como crianças. Muitos meio-elfos, incapazes de se encaixar em nenhuma dessas sociedades, escolhem uma vida solitária, vagando ou se juntando a outros desafortunados e adentrando uma vida de aventura."
     },
     {
         "name": "Halfling Pés Leves",
@@ -70,7 +81,9 @@
         },
         "expertise": {
             "weapons": ["dagger"]
-        }
+        },
+        "displacement": 8,
+        "description": "Como um halfling pés-leves, você pode esconder-se facilmente, mesmo usando apenas outras pessoas como cobertura. Você geralmente é afável e se dá muito bem com os outros. Nos Reinos Esquecidos, os halflings pés- leves espalharam-se até os lugares mais distantes e são a variedade mais comum. Pés-leves são mais propensos à vontade de viajar do que os outros halflings, e muitas vezes vivem ao lado de outras raças ou levam uma vida nômade. No mundo de Greyhawk, estes halflings são chamados pés-peludos ou companheiros altos."
     },
     {
         "name": "Halfling Robusto",
@@ -81,12 +94,23 @@
         "expertise": {
             "weapons": ["dagger"],
             "armor": ["light"]
-        }
+        },
+        "displacement": 8,
+        "description": "Um halfling robustos é mais resistente do que a média de sua raça e possui certa resistência aos venenos. Alguns dizem que os robustos têm sangue dos anões. Nos Reinos Esquecidos, esses halflings são chamados de austeros, e são mais comuns no sul."
     },
     {
         "name": "Humano",
-        "bonus": {},
-        "expertise": {}
+        "bonus": {
+            "forca": 1,
+            "carisma": 1,
+            "destreza": 1,
+            "sabedoria": 1,
+            "constituicao": 1,
+            "inteligencia": 1
+        },
+        "expertise": {},
+        "displacement": 9,
+        "description": "Nos confins da maioria dos mundos, os humanos são a mais jovem das raças comuns, chegando mais tarde no cenário mundial e com uma vida curta, se comparados aos anões, elfos e dragões. Talvez seja por causa de suas vidas mais curtas que eles se esforcem para alcançar o máximo que podem nos anos que têm. Ou talvez eles sintam que têm algo a provar às raças mais antigas, e é por esta razão que eles constroem seus poderosos impérios através da conquista e do comércio. O que quer que os motive, os humanos são os inovadores, os realizadores e os pioneiros dos mundos."
     },
     {
         "name": "Draconato",
@@ -96,7 +120,9 @@
         },
         "expertise": {
             "weapon": ["longSword", "shortSword", "mediumSword"]
-        }
+        },
+        "displacement": 10,
+        "description": "Descendentes de dragões, como seus nomes demonstram, os draconatos andam orgulhosamente pelo mundo que os saúda com um temor incompreensível. Moldados por deuses dracônicos ou pelos próprios dragões, draconatos originalmente nasceram de ovos de dragão como uma raça única, combinando os melhores atributos de dragões e humanos. Alguns draconatos são servos fieis de dragões verdadeiros, outros formas as fileiras de soldados em grandes guerras e ainda existem os que encontram-se à toa, sem um objetivo claro na vida."
     },
     {
         "name": "Gnomo da Floresta",
@@ -106,7 +132,9 @@
         },
         "expertise": {
             "weapon": ["dagger"]
-        }
+        },
+        "displacement": 8,
+        "description": "Como um gnomo da floresta, você possui um traquejo natural com ilusões e velocidade e furtividade naturais. Nos mundos de D&D, gnomos da floresta são raros e reservados. Eles vivem em comunidades escondidas em florestas silvestres, usando suas ilusões e truques para se esconderem das ameaças ou para mascarar sua fuga antes de serem detectados. Gnomos da floresta tendem a ser amigáveis com outros povos da floresta espirituosos e eles tem nos elfos e fadas bondosas como seus mais importantes aliados. Eles gnomos também fazem amizade com pequenos animais silvestres e contam com eles para obter informações sobre ameaças que estejam perambulando por suas terras."
     },
     {
         "name": "Gnomo das Rochas",
@@ -116,7 +144,9 @@
         },
         "expertise": {
             "weapon": ["dagger"]
-        }
+        },
+        "displacement": 7,
+        "description": "Como um gnomo das rochas, você possui uma inventividade e resistência naturais acima dos outros gnomos. A maioria dos gnomos nos mundos de D&D são gnomos das rochas, incluindo os gnomos engenhoqueiros do cenário de Dragonlance."
     },
     {
         "name": "Meio Orc",
@@ -127,26 +157,20 @@
         "expertise": {
             "weapons": ["axe", "hammer", "longSword", "mace"],
             "armor": ["heavy"]
-        }
+        },
+        "displacement": 9,
+        "description": "Quer estejam unidos sob a liderança de um poderoso bruxo ou estejam lutando por um impasse após anos de conflito, tribos orcs e humanas as vezes formam alianças, unindo forças em uma vasta horda para o pavor das terras civilizadas próximas. Quando essas alianças são seladas através do casamento, os meio-orcs nascem. Alguns meio-orcs crescem e se tornam orgulhosos comandantes de tribos orcs, seu sangue humano concedem a eles um diferencial perante seus rivais orcs de sangue puro. Alguns arriscam sair pelo mundo para provar seu valor entre os humanos e outras raças mais civilizadas. Muitos desses se tornam aventureiros, adquirindo renome pelos seus poderosos feitos e notoriedade por seus costumes bárbaros e fúria selvagem."
     },
     {
-        "name": "Tiefling Infernal",
+        "name": "Tiefling",
         "bonus": {
             "carisma": 2,
             "inteligencia": 1
         },
         "expertise": {
             "weapons": ["shortSword", "shortBow", "crossBow"]
-        }
-    },
-    {
-        "name": "Tiefling Abissal",
-        "bonus": {
-            "inteligencia": 2,
-            "constituicao": 1
         },
-        "expertise":{
-            "weapons": ["shortSword", "shortBow", "crossBow"]
-        }
+        "displacement": 9,
+        "description": "Ser recebido com olhares e cochichos, sofrer violência e insultos nas ruas, ver a desconfiança e medo em cada olhar: esse é o fardo do tiefling. E para completar tudo, os tieflings sabem que isso é graças ao pacto feito gerações atrás que infundiu a essência de Asmodeus – senhor supremo dos Nove Infernos – em sua linhagem. Sua aparência e natureza não é culpa deles, mas é o resultado de um pecado ancestral, pelo qual eles, seus filhos e os filhos de seus filhos serão eternamente responsabilizados."
     }
 ]

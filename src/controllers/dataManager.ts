@@ -4,7 +4,7 @@ const monsters = require('../../data/monsters.json');
 const items = require('../../data/items.json');
 
 import { Request, Response } from 'express';
-import { Spell, Monster, Item } from '../types'
+import { Spell, Monster, Item, Race } from '../types'
 
 export function searchSpell(req: Request, res: Response) {
     const { name, level, type, range } = req.query
@@ -31,14 +31,16 @@ export function searchSpell(req: Request, res: Response) {
 }
 
 export function searchRace(req: Request, res: Response) {
-    const name = req.query.name
+    const { name } = req.query
 
-    for (let i = 0; i < races.length; i++) {
-        if (races[i].name === name) {
-            return res.json(races[i])
-        }
+    if(!!name) {
+        return res.json(races.find((race: Race) => race.name === name))
+    } else {
+        return res.json({
+            succeeded: true,
+            races: races
+        })
     }
-    return res.send(null) 
 }
 
 export function searchMonster(req: Request, res: Response) {
