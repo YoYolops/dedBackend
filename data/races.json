@@ -135,7 +135,9 @@
             "carisma": 2,
             "inteligencia": 1
         },
-        "weapons": ["shortSword", "shortBow", "crossBow"]
+        "expertise": {
+            "weapons": ["shortSword", "shortBow", "crossBow"]
+        }
     },
     {
         "name": "Tiefling Abissal",
@@ -143,6 +145,8 @@
             "inteligencia": 2,
             "constituicao": 1
         },
-        "weapons": ["shortSword", "shortBow", "crossBow"]
+        "expertise":{
+            "weapons": ["shortSword", "shortBow", "crossBow"]
+        }
     }
 ]

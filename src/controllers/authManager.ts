@@ -12,7 +12,7 @@ export async function registerNewCharacter(req: Request, res: Response) {
 
     if(await isCharacterNameRegistered(character.characterName)) {
         return res.json({
-            status: 'Erro Benigno',
+            succeeded: false,
             message: 'Já existe um personagem com esse nome',
             error: null
         })
@@ -23,7 +23,10 @@ export async function registerNewCharacter(req: Request, res: Response) {
             characterData: character.characterData,
             pessessions: character.possessions
         })
-        return res.json(createdCharacter)
+        return res.json({
+            succeeded: true,
+            registeredCharacter: createdCharacter
+        })
     }
 }
 
@@ -33,5 +36,20 @@ export async function validateCharacterLogin(req: Request, res: Response) {
     const characterRegistered = await Character.findOne({
         $and: [{ characterName: characterName }, { password: password }]
     })
-    return res.json(characterRegistered)
+
+    if(!!characterRegistered) {
+        console.log('Login Autorizado')
+        const response = {
+            succeeded: true,
+            playerData: {
+                characterName: characterRegistered.characterName,
+                characterData: characterRegistered.characterData,
+                possessions: characterRegistered.possessions
+            }
+        }
+    }
+    return res.json({
+        succeeded: false,
+        message: 'Os oráculos não reconhecem este ser'
+    })
 }

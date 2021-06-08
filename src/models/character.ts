@@ -6,7 +6,7 @@ const CharacterSchema = new mongoose.Schema({
     characterName: String,
     password: String,
     characterData: {
-        characterAttributes: {
+        attributes: {
             forca: Number,
             destreza: Number,
             constituicao: Number,
@@ -14,8 +14,8 @@ const CharacterSchema = new mongoose.Schema({
             sabedoria: Number,
             carisma: Number
         },
-        raca: String, /* Raça */
-        classe: String,
+        race: String, /* Raça */
+        class: String,
     },
     possessions: {
         itemIds: Array,
